@@ -1,34 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
-	<title>Sample website</title>
+    <link rel="shortcut icon" type="image/x-icon" href="fav-icon.ico" />
+	<title>Kumar Gayatri</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     
 </head>
-<body class="w3-content" style="max-width:1300px">
-
-    <div class="form-group" ng-app="myApp" ng-controller="myCtrl">
-    <div><input type="text" ng-model="name" class="form-control" placeholder="enter username"></div>
-      <h1>Hello {{name}}</h1>
-    <ul class="list-group"><li class="list-group-item" ng-repeat="x in qs">{{x.question}} <input type="text" class="form-control"></li> </ul>
-    </div>
-	
+<body class="w3-content" style="max-width:1300px">	
 <!-- First Grid: Logo & About -->
 <div class="w3-row">
   <div class="w3-half w3-black w3-container w3-center" style="height:700px">
     <div class="w3-padding-64">
-      <h1>My Logo</h1>
+      <img src="images/cse-image.jpg" class="w3-margin w3-circle" style="width:100%">
     </div>
-    <div class="w3-padding-64">
       <a href="#" class="w3-btn w3-btn-block w3-hover-blue-grey w3-padding-16">Home</a>
       <a href="#work" class="w3-btn w3-btn-block w3-hover-teal w3-padding-16">My Work</a>
       <a href="#work" class="w3-btn w3-btn-block w3-hover-dark-grey w3-padding-16">Resume</a>
       <a href="#contact" class="w3-btn w3-btn-block w3-hover-brown w3-padding-16">Contact</a>
-    </div>
   </div>
   <div class="w3-half w3-blue-grey w3-container" style="height:700px">
     <div class="w3-padding-64 w3-center">
@@ -153,8 +144,8 @@
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-black w3-padding-16">
-</footer>
+<!--<footer class="w3-container w3-black w3-padding-16">
+</footer>-->
     <script>
 
         var app = angular.module("myApp", []);
