@@ -7,6 +7,9 @@
 	<link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"> </script>
+	<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+	<link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
     
 </head>
 <body class="w3-content" style="max-width:1300px">	
@@ -20,6 +23,7 @@
       <a href="#work" class="w3-btn w3-btn-block w3-hover-teal w3-padding-16">My Work</a>
       <a href="#work" class="w3-btn w3-btn-block w3-hover-dark-grey w3-padding-16">Resume</a>
       <a href="#contact" class="w3-btn w3-btn-block w3-hover-brown w3-padding-16">Contact</a>
+	  <a href="#github" class="w3-btn w3-btn-block w3-hover-brown w3-padding-16">Github</a>
   </div>
   <div class="w3-half w3-blue-grey w3-container" style="height:700px">
     <div class="w3-padding-64 w3-center">
@@ -146,9 +150,21 @@
     </div>
   </div>
 </div>
-
+<div class="w3-row" id="github">
+	<div class="w3-half w3-container w3-center" style="height:700px">
+		<div class="calendar">
+		</div>
+	</div>
+	<div class="w3-half w3-container w3-center" style="height:700px">
+		<div class="calendar">
+		</div>
+	</div>
+</div>
+<script>
+    new GitHubCalendar(".calendar", "kumarGayu");
+</script>
 <!-- Footer -->
-<!--<footer class="w3-container w3-black w3-padding-16">
+<!--<footer class="w3-container w3-padding-16">
 </footer>-->
     <script>
 
